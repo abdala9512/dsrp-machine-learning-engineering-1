@@ -9,3 +9,9 @@
 ## Módulo 2: Algoritmos de ML - Supervisados y no supervisados
 ## Módulo 3: Configuración Entorno en la nube
 ## Módulo 4: Buenas prácticas de desarrollo, GitHub
+
+
+
+
+------
+© 2025 Data Science Research Perú. Todos los derechos reservados
