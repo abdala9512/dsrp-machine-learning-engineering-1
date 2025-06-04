@@ -26,10 +26,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # Add uv to PATH if installed via local user
 export PATH="$HOME/.cargo/bin:$PATH"
 
-echo "Creando entorno virtual de Python..."
-python3 -m venv jupyter_env
-source jupyter_env/bin/activate
-
 echo "Creando requirements.txt..."
 cat <<EOF > requirements.txt
 jupyterlab
@@ -41,10 +37,9 @@ seaborn
 EOF
 
 echo "Instalando paquetes de Python usando uv..."
-uv pip install -r requirements.txt
-
-echo "Instalando kernel de Jupyter Lab para el entorno virtual..."
-python -m ipykernel install --user --name=jupyter_env --display-name "Python 3.11 (jupyter_env)"
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv init
+uv add -r requirements.txt
 
 echo "Configuración completa!"
 echo "Para activar tu entorno y ejecutar Jupyter Lab:"
