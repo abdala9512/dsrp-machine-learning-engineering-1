@@ -1,0 +1,9 @@
+[project]
+name = "dsrp-machine-learning-engineering-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyterlab>=4.4.3",
+]
